@@ -1,0 +1,19 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Header from "../components/Header.astro";
+---
+<Layout >
+    <Header />
+    <main class="container">
+		<section id="introduction" style="padding: 0% 5% 0%">
+			<h1>All Blog Posts</h1>
+    </section>
+    <section id="blog-posts" style="padding: 0% 5% 0%">
+      <a href="/posts/1.md" class="block secondary">
+        <article>
+          <h3>Your first Astro Site</h3>
+          <small>Building a website with Astro.</small>
+        </article>
+      </a>
+    </section>
+</Layout>
