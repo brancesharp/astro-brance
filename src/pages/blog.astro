@@ -1,6 +1,10 @@
 ---
+import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import BlogPost from "../components/BlogPost.astro";
+
+const allPosts = await getCollection("posts");
 ---
 <Layout >
     <Header />
@@ -9,11 +13,12 @@ import Header from "../components/Header.astro";
 			<h1>All Blog Posts</h1>
     </section>
     <section id="blog-posts" style="padding: 0% 5% 0%">
-      <a href="/posts/1.md" class="block secondary">
-        <article>
-          <h3>Your first Astro Site</h3>
-          <small>Building a website with Astro.</small>
-        </article>
-      </a>
+      <ul>
+        {
+          allPosts.map((post) => (
+            <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} />
+          ))
+        }
+      </ul>
     </section>
 </Layout>
