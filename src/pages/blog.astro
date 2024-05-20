@@ -2,6 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "../layouts/Layout.astro";
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro"
 import BlogPost from "../components/BlogPost.astro";
 
 const allPosts = await getCollection("posts");
@@ -13,12 +14,15 @@ const allPosts = await getCollection("posts");
 			<h1>All Blog Posts</h1>
     </section>
     <section id="blog-posts" style="padding: 0% 5% 0%">
-      <ul>
-        {
-          allPosts.map((post) => (
-            <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} />
-          ))
-        }
-      </ul>
+      <article>
+        <ul>
+          {
+            allPosts.map((post) => (
+              <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} />
+            ))
+          }
+        </ul>
+      </article>
     </section>
+    <Footer />
 </Layout>

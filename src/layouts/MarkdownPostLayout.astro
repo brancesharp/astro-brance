@@ -23,7 +23,6 @@ const { frontmatter } = Astro.props;
                 <h1>{frontmatter.title}</h1>
                 <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
                 <p><em>{frontmatter.description}</em></p>
-                <p>Written by: {frontmatter.author}</p>
             </section>
             <section id="content" style="padding: 0% 5% 0%">
                 <slot />
