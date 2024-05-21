@@ -1,12 +1,12 @@
 ---
 title: 'Setting up an Astro Project'
 pubDate: 2024-05-19
-description: 'Building an Astro website - Part 1'
+description: 'Building a website with Astro for total beginners - Part 1'
 author: 'Brance Sharp'
 tags: ["astro", "blogging"]
 ---
 
-#### Why Astro?
+### Why Astro?
 If you're looking to build a simple, content-driven site, it would be hard to find a better choice than Astro.
 
 You could, of course, build your site with a platform like SquareSpace or Wix. Both are great choices - but these solutions lack the
@@ -18,7 +18,7 @@ to get started, but some experience with these will make the process here much s
 This blog post will walk you through the beginning steps of building a website with Astro. We'll be leaning heavily on Astro's
 pre-built templates to get us started quickly, but with some additional tweaking, you can take it much further.
 
-#### Initializing a new project
+### Initializing a new project
 Alright, first things first: you'll need to have a JavaScript runtime environment installed on your computer. I'll be using Node.js,
 but you can use Bun if you'd prefer. The steps to initialize the project will be similar with either.
 

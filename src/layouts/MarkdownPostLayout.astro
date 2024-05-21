@@ -19,6 +19,9 @@ const { frontmatter } = Astro.props;
     <body>
         <Header />
         <main class="container">
+            <section id="blog-navigation" style="padding: 0% 5% 0%">
+                <a href="/blog"><small>Back to Blog Posts</small></a>
+            </section>
             <section id="frontmatter" style="padding: 0% 5% 0%">
                 <h1>{frontmatter.title}</h1>
                 <p>{frontmatter.pubDate.toString().slice(0,10)}</p>
