@@ -1,13 +1,19 @@
 ---
-title: 'Setting up an Astro Project'
+title: 'Setting up your first Astro Project'
 pubDate: 2024-05-19
 description: 'Building a website with Astro for total beginners - Part 1'
 author: 'Brance Sharp'
-tags: ["astro", "blogging"]
+tags: ["tech"]
 ---
 
 ### Why Astro?
-If you're looking to build a simple, content-driven site, it would be hard to find a better choice than Astro.
+Over the past few weeks I've been diving into several JavaScript frameworks with the goal of finding something that is
+conceptually simple and provides a smooth developer experience. Astro happened to be one of the first options I
+tried, and it didn't take long for me to notice that it checked all of the boxes I cared about.
+
+For context, I have some some experience with Python and Go, but I haven't dived too deep into JavaScript and I'm just
+dipping my toes into web development. Despite this, I found Astro incredibly easy to get started with and build a website
+with.
 
 Astro has several advantages over other JavaScript frameworks, especially for simple use cases like blogs or portfolio sites:
 - It's much simpler to use and get started with.

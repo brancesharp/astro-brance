@@ -5,13 +5,16 @@ import Header from "../components/Header.astro";
 import Footer from "../components/Footer.astro"
 import BlogPost from "../components/BlogPost.astro";
 
+const pageTitle = "Blog posts"
 const allPosts = await getCollection("posts");
 ---
-<Layout >
-    <Header />
-    <main class="container">
-		<section id="introduction" style="padding: 0% 5% 0%">
-			<h1>All blog posts</h1>
+
+<Layout pageTitle={pageTitle}>
+  <Header />
+  <main class="container">
+    <section id="introduction" style="padding: 0% 5% 0%">
+      <h1>All blog posts</h1>
+      <p>Here I write about topics I am interested in - namely marketing and web development.</p>
     </section>
     <section id="blog-posts" style="padding: 0% 5% 0%">
       <article>
@@ -24,5 +27,8 @@ const allPosts = await getCollection("posts");
         </ul>
       </article>
     </section>
-    <Footer />
+  </main>
+  <Footer />
 </Layout>
+
+

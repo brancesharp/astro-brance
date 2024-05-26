@@ -14,7 +14,7 @@ const { frontmatter } = Astro.props;
         <meta name="viewport" content="width-device-width, initial-scale=1" />
         <meta name="generator" content={Astro.generator} />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.indigo.min.css"/>
-        <title>Brance</title>
+        <title>{frontmatter.title}</title>
     </head>
     <body>
         <Header />
